@@ -300,7 +300,7 @@ p {
   height: 1px;
   margin: -1px;
 }
-/*button {
+.portfolio-button {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -314,12 +314,12 @@ p {
   padding: 6px 22px;
   cursor: pointer;
 }
-button:hover,
-button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   border: var(--accent-color);
-} */
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -607,6 +607,8 @@ address {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--animation-duration) var(--animation-type);
 }
 .modal {
   position: absolute;
@@ -628,4 +630,8 @@ address {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
